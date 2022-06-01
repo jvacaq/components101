@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -14,4 +14,10 @@ export class AppComponent {
   };
   myArr = ['him', 'hers', 'yours'];
   myBoolean = true;
+  angularLogo = 'https://angular.io/assets/images/logos/angular/angular.png';
+  buttonStatus = false;
+
+  myEvent($event: MouseEvent) {
+    console.log($event);
+  }
 }

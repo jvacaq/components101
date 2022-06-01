@@ -5,6 +5,12 @@
 </ul>
 <div *ngIf="myObject"> {{myObject.location}}</div>
 <div *ngIf="myBoolean; then tmpl1 else tmpl2"></div>
+<img alt='Logo1' src="{{angularLogo}}"/>
+<img alt='Logo2' [src]="angularLogo"/>
+<img alt='Logo3' bind-src="angularLogo"/>
 <app-my-new-component></app-my-new-component>
 <ng-template #tmpl1>Verdad Verdadera</ng-template>
 <ng-template #tmpl2>NOP</ng-template>
+<button [disabled]="buttonStatus">Click me!</button>
+<button (click)="myEvent($event)">Event</button>
+
