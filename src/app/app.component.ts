@@ -22,6 +22,12 @@ export class AppComponent {
     'red-title':true,
     'bigger-title': true
   };
+  titleStyle: string = 'red';
+  titleStyleCondition: boolean = true;
+  titleStyles: Object = {
+    'color': 'red',
+    'font-size':'6em'
+  };
 
   myEvent($event: MouseEvent) {
     console.log($event);

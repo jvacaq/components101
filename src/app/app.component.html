@@ -1,6 +1,9 @@
 <h1 [class]="titleClass">{{title}}</h1>
 <h1 [class.blue-title]="blueTitle">blue-title</h1>
 <h1 [ngClass]="titleClasses">ngClass</h1>
+<h2 [style.color]="titleStyle">style.color</h2>
+<h2 [style.color]="titleStyleCondition ? 'green' : 'pink'">style.color condicional</h2>
+<h2 [ngStyle]="titleStyles">[ngStyle]</h2>
 <p>{{ myObject.gender}}</p>
 <ul>
   <li *ngFor="let datos of myArr">{{ datos }}</li>
