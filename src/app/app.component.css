@@ -1,3 +1,15 @@
 h1{
   text-decoration: underline;
 }
+
+.red-title{
+  color: red;
+}
+
+.blue-title{
+  color: cornflowerblue;
+}
+
+.bigger-title{
+  font-size: 5em;
+}

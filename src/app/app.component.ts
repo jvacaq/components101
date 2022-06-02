@@ -16,6 +16,12 @@ export class AppComponent {
   myBoolean = true;
   angularLogo = 'https://angular.io/assets/images/logos/angular/angular.png';
   buttonStatus = false;
+  titleClass: any = 'red-title';
+  blueTitle: boolean = true;
+  titleClasses: Object = {
+    'red-title':true,
+    'bigger-title': true
+  };
 
   myEvent($event: MouseEvent) {
     console.log($event);
